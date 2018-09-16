@@ -9,16 +9,22 @@ This project is for users who need extremely lean blogging software for github.i
 
 - install pandoc via `sudo zypper in pandoc` (on OpenSUSE)
 - Go to github.com
-- Fork the **develop** branch of this repository
+- Create a new repository
 - Name the new repository **username.github.io**
-- Clone your fork
+- `init` the new repository with
 
 ```
-git clone -b develop https://github.com/username/bbevan.github.io.git
+git init http://github.com/username/username.github.io.git
+cd username.github.io
 ```
 
-## Next-Steps
-Somehow you need to rename this fork as username.github.io (this is development documentation - in progress)
+- Clone this repository
+
+```
+# Remember the . It's important!
+git clone  https://github.com/bbevan/exlean .
+
+```
 
 ## How This Works
 `blog.sh` is a five-line shell script that
